@@ -191,4 +191,10 @@ Feel free to reach out or connect with us through the platforms below:
   - 📧 [doni@example.com](mailto:doni@example.com)
 
 ---
+## 💬 Final Note
+
+“Great projects are built by great teams.”  
+We’re proud to present our work on the **LMS Project**, aiming to simplify learning and management through smart technology.
+
+Made with ❤️ by **Team LMS** — Sundaram, Sambhav, Likhith, Abhishek & Doni Aditya
 
