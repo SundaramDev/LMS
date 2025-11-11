@@ -1,5 +1,5 @@
 # 📘 GyanPath – Learning Management System (LMS)
-[![GyanPath Preview](./front.png)](https://lms-frontend-five-sand.vercel.app/)
+![Front Page](./client/assets/front.png)(https://lms-frontend-five-sand.vercel.app/)
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)
@@ -141,29 +141,54 @@ npm run dev
 ```
 
 ### System Architecture
-[![GyanPath Preview](./System_architect)]
+![System Architecture](./client/assets/System_architect.png)
+
 
 
 #### Your app will start at 👉 http://localhost:5173
 
-##  Challenges & What I Learned
+##  Challenges & What We Learned
 
-During this project, I learned how to:
+During this project, we learned how to:
 - Integrate **Clerk Authentication** and **Stripe Payments**
 - Manage file uploads using **Multer & Cloudinary**
 - Structure a **MERN full-stack** project professionally
 - Deploy client and server separately using **Vercel**
 
 
+
 ##  Get in Touch
 
-I'm always open to collaborating on exciting projects or discussing new ideas in **Web Development**, **AI**, or **Automation**.  
-Feel free to reach out or connect with me through the platforms below:
+We’re always open to collaborating on exciting projects or discussing new ideas in **Web Development**, **AI**, or **Automation**.  
+Feel free to reach out or connect with us through the platforms below:
 
--  **Portfolio:** [Portfolio](https://portfolio-mu-ten-mzrtwnfksv.vercel.app/)  
--  **LinkedIn:** [https://www.linkedin.com/in/sundaram-5695b629a/](https://www.linkedin.com/in/sundaram-5695b629a/)  
--  **Email:** [sundaram95802@gmail.com](mailto:sundaram95802@gmail.com)  
--  **GitHub:** [https://github.com/SundaramDev](https://github.com/SundaramDev)
+### 👥 Team Members
 
+- **Sundaram**  
+  - [Portfolio](https://portfolio-mu-ten-mzrtwnfksv.vercel.app/)  
+  - [LinkedIn](https://www.linkedin.com/in/sundaram-5695b629a/)  
+  - [GitHub](https://github.com/SundaramDev)  
+  - 📧 [sundaram95802@gmail.com](mailto:sundaram95802@gmail.com)
+
+- **Sambhav Mishra**  
+  - [LinkedIn](https://www.linkedin.com/in/sambhav-mishra-6a815a2a4/)  
+  - [GitHub](https://github.com/SambhavMishra8319)  
+  - 📧 [23bds050@iiitdwd.ac.in](mailto:23bds050@iiitdwd.ac.in)
+
+- **Aggimalla Abhishek**  
+  - [LinkedIn](https://www.linkedin.com/in/aggimalla-abhishek-a8397829a/)  
+  - [GitHub](https://github.com/AggimallaAbhishek)  
+  - 📧 [23bds004@iiitdwd.ac.in](mailto:23bds004@iiitdwd.ac.in)
+
+- **Nenavath Likhith Naik**  
+  - [LinkedIn](https://www.linkedin.com/in/likhith-naik-14693b328/)  
+  - [GitHub](https://github.com/Likhith-23)  
+  - 📧 [23bds037@iiitdwd.ac.in](mailto:23bds037@iiitdwd.ac.in)
+
+- **Doni Adithya**  
+  - [LinkedIn](https://www.linkedin.com/in/doni-adithya-8551a3316/)  
+  - [GitHub](#)  
+  - 📧 [doni@example.com](mailto:doni@example.com)
 
 ---
+
