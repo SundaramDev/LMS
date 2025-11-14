@@ -1,5 +1,6 @@
 # 📘 GyanPath – Learning Management System (LMS)
-![Front Page](./client/assets/front.png)(https://lms-frontend-five-sand.vercel.app/)
+[![Front Page](./client/assets/front.png)](https://lms-frontend-five-sand.vercel.app/)
+
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)
