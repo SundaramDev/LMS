@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex flex-col md:items-start items-center w-full'>
           <img src={assets.logo} alt="logo" className='mb-4' />
           <p className='mt-6 text-center md:text-left text-sm text-white/80'>
-            GyanPath is dedicated to helping learners explore new skills, achieve their goals,  
+            GyanPath is dedicated to helping learners explore new skills, achieve their goals,
             and grow their knowledge anytime, anywhere.
           </p>
         </div>
@@ -19,10 +19,10 @@ const Footer = () => {
         <div className='flex flex-col md:items-start items-center w-full'>
           <h2 className='font-semibold text-white mb-5'>Company</h2>
           <ul className='flex md:flex-col w-full justify-between text-sm text-white/80 md:space-y-2'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
           </ul>
         </div>
 

@@ -1,30 +1,37 @@
-const About = () => {
-  return (
-    <div className="min-h-screen bg-gray-100 p-10 md:px-32">
-      <h1 className="text-3xl font-bold mb-4 text-gray-800">About Us</h1>
+import React from "react";
 
-      <p className="text-lg text-gray-700 leading-relaxed">
-        Welcome to <strong>GyanPath</strong> — a Learning Management System created by our team  
-        to help students and educators connect, learn, and grow.  
-        Our mission is to make online learning simple, accessible, and effective.
+export default function About() {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-4xl font-bold mb-6">About Us</h1>
+
+      <p className="text-lg leading-relaxed mb-4">
+        Welcome to our platform! We are a team of developers passionate about
+        building modern, reliable, and user-friendly applications. Our mission
+        is to provide seamless digital experiences that help people connect,
+        collaborate, and communicate more efficiently.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3 text-gray-800">Our Team</h2>
+      <p className="text-lg leading-relaxed mb-4">
+        This website demonstrates cutting-edge technology including:
+      </p>
 
-      <ul className="list-disc ml-6 text-gray-700 text-lg space-y-1">
-        <li>Likhith</li>
-        <li>Sundaram</li>
-        <li>Abhishek</li>
-        <li>Doni</li>
-        <li>Sam Mishra</li>
+      <ul className="list-disc pl-6 text-lg mb-4 space-y-2">
+        <li>Real-time communication</li>
+        <li>Modern UI/UX design</li>
+        <li>Secure authentication system</li>
+        <li>Optimized frontend and backend architecture</li>
       </ul>
 
-      <p className="mt-8 text-gray-700 text-lg">
-        Together, we have designed and developed this platform with passion, teamwork,  
-        and a strong vision of transforming the learning experience.
+      <p className="text-lg leading-relaxed mb-4">
+        Our team believes that innovation and creativity drive the future. We
+        continuously upgrade our platform with new features and improvements.
+      </p>
+
+      <p className="text-lg leading-relaxed">
+        Thank you for using our application! If you have any suggestions or
+        feedback, feel free to reach out to us.
       </p>
     </div>
   );
-};
-
-export default About;
+}
