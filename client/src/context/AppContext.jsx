@@ -15,26 +15,26 @@ export const AppContextProvider = (props) => {
 
   const { getToken } = useAuth();
   const { user } = useUser();
-
   const [allCourses, setAllCourses] = useState([]);
   const [isEducator, setIsEducator] = useState(false);
   const [enrolledCourses, setEnrolledCourses] = useState([]);
   const [userData, setUserData] = useState(null);
-
-  // Fetch all courses
-  const fetchAllCourses = async () => {
-    try {
-      const { data } = await axios.get(backendUrl + "/api/course/all");
-
-      if (data.success) {
-        setAllCourses(data.courses);
-      } else {
-        toast.error(data.message);
+  
+    // Fetch all courses
+    const fetchAllCourses = async () => {
+      try {
+        const { data } = await axios.get(backendUrl + "/api/course/all");
+  
+        if (data.success) {
+          setAllCourses(data.courses);
+        } else {
+          toast.error(data.message);
+        }
+      } catch (error) {
+        toast.error(error.message);
       }
-    } catch (error) {
-      toast.error(error.message);
-    }
-  };
+    };
+
 
   // Fetch UserData
   const fetchUserData = async () => {
