@@ -1,5 +1,6 @@
 # 📘 GyanPath – Learning Management System (LMS)
-![Front Page](./client/assets/front.png)(https://lms-frontend-five-sand.vercel.app/)
+[![Front Page](./client/assets/front.png)](https://lms-frontend-five-sand.vercel.app/)
+
 
 ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)
@@ -196,5 +197,5 @@ Feel free to reach out or connect with us through the platforms below:
 “Great projects are built by great teams.”  
 We’re proud to present our work on the **LMS Project**, aiming to simplify learning and management through smart technology.
 
-Made with ❤️ by **Team LMS** — Sundaram, Sambhav, Likhith, Abhishek & Doni Aditya
+Made with ❤️ by **Team LMS** — Sundaram, Sambhav, Likhith, A. Abhishek & Doni Aditya
 
