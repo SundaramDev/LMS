@@ -188,8 +188,8 @@ Feel free to reach out or connect with us through the platforms below:
 
 - **Doni Adithya**  
   - [LinkedIn](https://www.linkedin.com/in/doni-adithya-8551a3316/)  
-  - [GitHub](#)  
-  - 📧 [doni@example.com](mailto:doni@example.com)
+  - [GitHub](https://github.com/DoniAdithya07)  
+  - 📧 [23bds007@iiitdwd.ac.in](mailto:23bds007@iiitdwd.ac.in)
 
 ---
 ## 💬 Final Note
