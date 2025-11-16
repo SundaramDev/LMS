@@ -1,60 +1,73 @@
-import React, { useContext } from 'react';
-import { assets } from '../../assets/assets';
-import { AppContext } from '../../context/AppContext';
-import { Link } from 'react-router-dom';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AppContext } from "../../context/AppContext";
+import { assets } from "../../assets/assets";
 
 const CourseCard = ({ course }) => {
   const { currency, calculateRating } = useContext(AppContext);
 
-  // ✅ Prevent rendering if course or course._id is missing
-  if (!course || !course._id) {
-    return null;
-  }
+  // Prevent rendering if course data is invalid
+  if (!course || !course._id) return null;
 
-  const discountedPrice = (
-    course.coursePrice - (course.discount * course.coursePrice) / 100
-  ).toFixed(2);
+  const {
+    _id,
+    courseThumbnail,
+    courseTitle,
+    coursePrice,
+    discount,
+    educator,
+    courseRatings
+  } = course;
+
+  const finalPrice = (coursePrice - (discount * coursePrice) / 100).toFixed(2);
+  const ratingValue = calculateRating(course);
+  const totalRatings = courseRatings?.length || 0;
 
   return (
     <Link
-      to={`/course/${course._id}`}
+      to={`/course/${_id}`}
       onClick={() => scrollTo(0, 0)}
-      className="border border-gray-500/30 pb-6 overflow-hidden rounded-lg"
+      className="block border border-gray-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-xl overflow-hidden bg-white"
     >
+      {/* Thumbnail */}
       <img
-        className="w-full"
-        src={course.courseThumbnail || assets.placeholder} // ✅ fallback image
-        alt={course.courseTitle || 'Course Thumbnail'}
+        src={courseThumbnail || assets.placeholder}
+        alt={courseTitle || "Course Thumbnail"}
+        className="w-full h-44 object-cover"
       />
 
-      <div className="p-3 text-left">
-        <h3 className="text-base font-semibold">{course.courseTitle || 'Untitled Course'}</h3>
-        <p className="text-gray-500">{course?.educator?.name || 'Unknown Educator'}</p>
+      <div className="p-4">
+        {/* Title */}
+        <h3 className="text-lg font-semibold text-gray-900 leading-tight">
+          {courseTitle || "Untitled Course"}
+        </h3>
 
-        <div className="flex items-center space-x-2">
-          <p>{calculateRating(course)}</p>
-          <div className="flex">
+        {/* Educator */}
+        <p className="text-sm text-gray-500 mt-1">
+          {educator?.name || "Unknown Educator"}
+        </p>
+
+        {/* Rating */}
+        <div className="flex items-center gap-2 mt-2">
+          <p className="text-sm font-medium text-gray-800">{ratingValue}</p>
+
+          <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
               <img
                 key={i}
-                src={
-                  i < Math.floor(calculateRating(course))
-                    ? assets.star
-                    : assets.star_blank
-                }
-                alt="star"
-                className="w-3.5 h-3.5"
+                src={i < Math.floor(ratingValue) ? assets.star : assets.star_blank}
+                alt="rating-star"
+                className="w-4 h-4"
               />
             ))}
           </div>
-          <p className="text-gray-500">
-            {course.courseRatings?.length || 0}
-          </p>
+
+          <p className="text-xs text-gray-500">({totalRatings})</p>
         </div>
 
-        <p className="text-base font-semibold text-gray-800">
-          {currency}
-          {discountedPrice}
+        {/* Price */}
+        <p className="text-lg font-bold text-gray-900 mt-3">
+          {currency}{finalPrice}
         </p>
       </div>
     </Link>
