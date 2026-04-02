@@ -5,7 +5,7 @@ const connectDB = async () => {
   try {
     // Attempt to establish a connection using the URI from environment variables
     await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: "GyanPath",  // Specify the database name
+      dbName: "GyanPath",  
     });
 
     // If successful, log a confirmation message
@@ -13,7 +13,7 @@ const connectDB = async () => {
     
   } catch (error) {
     // Log the error message if the connection fails
-    console.error("❌ MongoDB Connection Failed:", error.message);
+    console.error(" MongoDB Connection Failed:", error.message);
 
     // Exit the application with failure code
     process.exit(1);
