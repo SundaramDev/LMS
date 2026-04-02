@@ -9,7 +9,7 @@
 
 **GyanPath** is a full-stack **Learning Management System (LMS)** designed for both **students** and **educators**.  
 Educators can create and manage courses, while learners can explore, enroll, and learn interactively — all in one place.  
-Built using the **MERN stack**, it ensures a smooth, scalable, and responsive learning experience.
+Built using the **MERN stack**,it ensures a smooth, scalable, and responsive learning experience.
 
 🔗 **Live Demo:** [https://lms-frontend-five-sand.vercel.app/](https://lms-frontend-five-sand.vercel.app/)
 
@@ -146,7 +146,7 @@ npm run dev
 
 
 
-#### Your app will start at 👉 http://localhost:5173
+#### Your app will start at  http://localhost:5173
 
 ##  Challenges & What We Learned
 
